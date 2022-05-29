@@ -13,16 +13,16 @@ export type WalletControllerChainOptions = Pick<
   'defaultNetwork' | 'walletConnectChainIds'
 >;
 
-const FALLBACK_MAINNET = {
-  name: 'mainnet',
+const FALLBACK_CLASSIC = {
+  name: 'classic',
   chainID: 'columbus-5',
-  lcd: 'https://lcd.terra.dev',
+  lcd: 'https://columbus-lcd.terra.dev',
 };
 
 const FALLBACK: WalletControllerChainOptions = {
-  defaultNetwork: FALLBACK_MAINNET,
+  defaultNetwork: FALLBACK_CLASSIC,
   walletConnectChainIds: {
-    1: FALLBACK_MAINNET,
+    1: FALLBACK_CLASSIC,
     0: {
       name: 'testnet',
       chainID: 'bombay-12',
